@@ -32,4 +32,12 @@ pbmtorle < image.pbm > image.rle
 
 You have to edit the source code to use the appropriate rle file and give it a caption. The caption string is prepended with the length, so make sure it matches. When you rebuild the binary, the resultant file has to be 3456 bytes or less, assuming you want it to run on a minimal 4K Apple 1. If you have more contiguous memory, then you can fill 'er up.
 
+Viewing RLE ASCII Artwork
+-------------------------
+
+You can view the converted ASCII artwork in your terminal by running:
+```
+dumprle image.rle
+```
+
 Dave...
