@@ -27,7 +27,7 @@ Creating Other Artwork
 
 To use different artwork, You have to go through a bit of a process to get the artwork into a compatible format. Using a program like PhotoShop or The Gimp, change the image to 8 bit greyscale, then resize the image to 40x23 pixels. Save it is a net PBM file (.pbm). Convert the PBM to a RLE format with the converter:
 ```
-pbmtorle < image.pbm > image.rle
+pbmtorle image.pbm > image.rle
 ```
 
 You have to edit the source code to use the appropriate rle file and give it a caption. The caption string is prepended with the length, so make sure it matches. When you rebuild the binary, the resultant file has to be 3456 bytes or less, assuming you want it to run on a minimal 4K Apple 1. If you have more contiguous memory, then you can fill 'er up.
