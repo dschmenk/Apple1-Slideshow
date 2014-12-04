@@ -30,6 +30,6 @@ To use different artwork, You have to go through a bit of a process to get the a
 pbmtorle < image.pbm > image.rle
 ```
 
-You have to edit the source code to use the appropriate rle file and give it a caption. The caption string is prepended with the length, so make sure it matches. When you rebuild the binary, the resultant file has to be 3456 bytes or less, assuming you want it to run on a minimal 4K Apple1. If you have more contiguous memory, then you can fill 'er up.
+You have to edit the source code to use the appropriate rle file and give it a caption. The caption string is prepended with the length, so make sure it matches. When you rebuild the binary, the resultant file has to be 3456 bytes or less, assuming you want it to run on a minimal 4K Apple 1. If you have more contiguous memory, then you can fill 'er up.
 
 Dave...
